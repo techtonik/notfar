@@ -1,3 +1,5 @@
+![Far Manager Help](screens/help.png)
+---
 * [x] add command line prompt like in Far Manager (show path and enter command)
   * [ ] add screen with Far Manager
 ---
