@@ -1,7 +1,7 @@
 ![Far Manager Help](screens/help.png)
 ---
 * [x] add command line prompt like in Far Manager (show path and enter command)
-  * [ ] add screen with Far Manager
+  * [x] add screen with Far Manager
 ---
 * [ ] add bottom bar and **Ctrl+B** keybinding to show that
   * [ ] add screen of bottom bar
