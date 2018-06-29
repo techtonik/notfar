@@ -7,8 +7,9 @@
   * [ ] add screen of bottom bar
   * [ ] add link to **Ctrl+B** docs from Far Manager
   * [ ] https://github.com/jonathanslenders/python-prpromptompt-toolkit/issues/655
-  
+
 https://python-prompt-toolkit.readthedocs.io/en/master/pages/progress_bars.html
+
 ---
 * [ ] pick up right color for toolbar
 * [ ] show empty keys in the toolbar
