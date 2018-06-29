@@ -3,8 +3,15 @@
 * [x] add command line prompt like in Far Manager (show path and enter command)
   * [x] add screen with Far Manager
 ---
-* [ ] add bottom bar and **Ctrl+B** keybinding to show that
+* [x] add bottom bar and **Ctrl+B** keybinding to show that
   * [ ] add screen of bottom bar
-  * [ ] add link to **Ctrl+B** docs
+  * [ ] add link to **Ctrl+B** docs from Far Manager
+  * [ ] https://github.com/jonathanslenders/python-prpromptompt-toolkit/issues/655
   
 https://python-prompt-toolkit.readthedocs.io/en/master/pages/progress_bars.html
+---
+* [ ] pick up right color for toolbar
+* [ ] show empty keys in the toolbar
+* [ ] **F10** to quit
+---
+* [ ] **F1** to show help
