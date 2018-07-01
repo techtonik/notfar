@@ -24,8 +24,14 @@ def switch_toolbar(event):
         global_toolbar = None
     session.bottom_toolbar = global_toolbar
 
-
 session = PromptSession(os.getcwd() + ">", key_bindings=global_kb, bottom_toolbar=global_toolbar)
-text = session.prompt()
-print("[debug] " + text)
+while True:
+    try:
+        text = session.prompt()
+    except KeyboardInterrupt:  # [ ] in Far Ctrl+C does nothing
+        break
+    except EOFError:           # [ ] in Far Ctrl+D does nothing
+        break
+    else:
+        print("[debug] " + text)
 
