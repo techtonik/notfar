@@ -3,9 +3,8 @@
 import os
 
 # requires prompt-toolkit > 2
-from prompt_toolkit import PromptSession
+from prompt_toolkit import PromptSession, HTML
 from prompt_toolkit.key_binding import KeyBindings
-
 
 global_kb = KeyBindings()
 
@@ -13,7 +12,7 @@ global_kb = KeyBindings()
 global_toolbar = None
 
 def bottom_toolbar():
-    return "F1 Help"
+    return HTML("<key fg='white' bg='black'>1</key>Help")
 
 @global_kb.add('c-b')  # Ctrl+B
 def switch_toolbar(event):
