@@ -11,7 +11,7 @@
 https://python-prompt-toolkit.readthedocs.io/en/master/pages/progress_bars.html
 
 ---
-* [ ] pick up right color for toolbar
+* [x] pick up right color for toolbar
 * [ ] show empty keys in the toolbar
 * [ ] **F10** to quit
 ---
