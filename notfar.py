@@ -15,11 +15,12 @@ global_toolbar = None
 # color the application
 style = Style.from_dict({
     # reset bottom_toolbar style
-    'bottom-toolbar': 'noreverse black bg:darkcyan',
+    'bottom-toolbar': 'noreverse gray bg:black',
+    'bottom-toolbar label': 'black bg:darkcyan'
 })
 
 def bottom_toolbar():
-    return HTML("<key fg='ansigray' bg='ansiblack'>1</key>Help")
+    return HTML("1<label>Help  </label>")
 
 @global_kb.add('c-b')  # Ctrl+B
 def switch_toolbar(event):
