@@ -19,8 +19,38 @@ style = Style.from_dict({
     'bottom-toolbar label': 'black bg:darkcyan'
 })
 
+def get_mainbar():
+    """ return keybar adding missing empty keys
+    """
+    mainbar = [
+        (1, 'Help'),
+    ]
+    # there could be 12 keys at the bottom
+    keysno = max(10, max(m[0] for m in mainbar))
+    # add missing keys to keybar
+    for idx in range(1, keysno+1):  # 1-10 or 1-12
+        if len(mainbar) >= idx:
+            #print(len(mainbar), idx, mainbar[idx-1])
+            if mainbar[idx-1][0] == idx:
+                continue
+            else:
+                mainbar.insert(idx-1, (idx, ''))
+        else: # no more buttons
+            mainbar.append((idx, ''))
+        #print(mainbar)
+    return mainbar
+
 def bottom_toolbar():
-    return HTML("1<label>Help  </label>")
+    keybar = get_mainbar()
+    minlabel = 6
+    labelled = []
+    for key, label in keybar:
+        if len(label) > minlabel:  # then trim label
+            label = label[:minlabel]
+        # {:{}} means width is specified by argument
+        labelled.append("{}<label>{:{w}}</label>".format(
+                        key, label, w=minlabel))
+    return HTML(' '.join(labelled))
 
 @global_kb.add('c-b')  # Ctrl+B
 def switch_toolbar(event):
