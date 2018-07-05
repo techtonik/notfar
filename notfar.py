@@ -61,7 +61,7 @@ def switch_toolbar(event):
         global_toolbar = None
     session.bottom_toolbar = global_toolbar
 
-session = PromptSession(os.getcwd() + ">", key_bindings=global_kb, bottom_toolbar=global_toolbar, style=style)
+session = PromptSession(os.getcwd() + ">", key_bindings=global_kb, bottom_toolbar=bottom_toolbar, style=style)
 while True:
     try:
         text = session.prompt()
