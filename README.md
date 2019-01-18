@@ -1,3 +1,8 @@
+This project tries to copy good usability decisions from the interface of
+Far Manager by reimplementing them with https://github.com/prompt-toolkit/python-prompt-toolkit.
+
+Reference image and Roadmap:
+
 ![Far Manager Help](screens/help.png)
 ---
 * [x] add command line prompt like in Far Manager (show path and enter command)
